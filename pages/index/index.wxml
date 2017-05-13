@@ -1,0 +1,24 @@
+
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="section">
+    <view class="flex-wrp" style="flex-direction:column;">
+      <view class="flex-item bc_green">1</view>
+      <view class="flex-item bc_red">2</view>
+      <view class="flex-item bc_blue">3</view>
+      <view class="flex-item bc_green">1</view>
+      <view class="flex-item bc_red">2</view>
+      <view class="flex-item bc_blue">3</view>
+      <view class="flex-item bc_green">1</view>
+      <view class="flex-item bc_red">2</view>
+      <view class="flex-item bc_blue">3</view>
+    </view>
+  </view>
+</view>

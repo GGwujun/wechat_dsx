@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/warn/index",
+    "pages/my/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#478AFF",
+    "navigationBarTitleText": "web 前端大师兄",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#231815",
+    "selectedColor": "#f85f48",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "文章",
+        "iconPath": "images/audient.png",
+        "selectedIconPath": "images/audient1.png"
+      },
+      {
+        "pagePath": "pages/warn/index",
+        "text": "发表",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search1.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine1.png"
+      }
+    ]
+  }
+}

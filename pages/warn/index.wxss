@@ -1,0 +1,58 @@
+/* pages/wallet/index.wxss */
+.container{
+	background:#fff;
+}
+.choose{
+	background-color: #fff;
+}
+
+.action .action-photo{
+	background-color: #fff;
+	padding: 40rpx 0px 40rpx 50rpx;
+}
+.action .action-photo image{
+	position: relative;
+	display: inline-block;
+	width: 120rpx;
+	height: 120rpx;
+	overflow: visible;
+	margin-left: 25rpx;
+}
+.action .action-photo image icon.del{
+	display: block;
+	position: absolute;
+	top: -20rpx;
+	right: -20rpx;
+}
+.action .action-photo text.add{
+	display: inline-block;
+	width: 120rpx;
+	height: 120rpx;
+	line-height: 120rpx;
+	text-align: center;
+	font-size: 24rpx;
+	color: #ccc;
+	border: 2rpx dotted #ccc;
+	vertical-align: top;
+}
+
+.action .action-submit{
+	padding: 40rpx 40rpx;
+	background-color: #fff;
+}
+
+.picker{
+	width: 100%;
+	background-color: #f2f2f2;
+	padding: 30rpx 0 30rpx 50rpx;
+	font-size: 28rpx;
+	color: #000;
+}
+
+textarea{
+	min-height:300rpx;
+	width:100%;
+	background:#fff;
+	font-size:30rpx;
+}
+

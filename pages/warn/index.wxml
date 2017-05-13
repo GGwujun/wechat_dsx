@@ -1,0 +1,31 @@
+
+<!--pages/warn/index.wxml-->
+<view class="container">
+  <view class="choose">
+    <view class="section">
+      <picker style="backgroun:red;" bindchange="bindPickerChange" value="{{index}}" range="{{itemsValue}}">
+        <view class="picker">
+          请选择类型：{{itemsValue[index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="section" style="padding: 30rpx 30rpx 30rpx 50rpx;">
+    <textarea bindblur="bindTextAreaBlur" placeholder="写点什么" />
+  </view>
+  <view class="action">
+    <view class="action-photo">
+      <block wx:for="{{picUrls}}" wx:key="{{item}}" wx:index="{{index}}">
+        <image src="{{item}}">
+          <icon type="cancel" data-index="{{index}}" color="red" size="18" class="del" bindtap="delPic" />
+        </image>
+      </block>
+      <text class="add" bindtap="bindCamera">{{actionText}}</text>
+    </view>
+
+    <!--提交-->
+    <view class="action-submit">
+      <button class="submit-btn" type="default" loading="{{loading}}" bindtap="formSubmit" style="background-color: {{btnBgc}}">提交</button>
+    </view>
+  </view>
+</view>
