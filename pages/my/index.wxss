@@ -18,11 +18,8 @@
 	margin-bottom: 30rpx;
 }
 .btn-login{
-	position: absolute;
-	bottom: 60rpx;
 	width: 90%;
-	left: 50%;
-	margin-left: -45%;
+	margin:50px auto;
 }
 .gray{
 	background-color: #ccc;
