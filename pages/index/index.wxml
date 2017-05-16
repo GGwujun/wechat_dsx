@@ -4,52 +4,152 @@
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}">
       <swiper-item>
-        <image src="{{item}}" class="slide-image" width="100%" height="150" />
+        <image src="{{item}}" class="slide-image" style="width:100%;" height="150" />
       </swiper-item>
     </block>
   </swiper>
-  <view class="section">
+  <view class="section" style="background-color:#F9F9F9;">
     <view class="flex-wrp" style="flex-direction:column;">
-      <view class="article">
+      <view class="article first" bindtap="movetoDetail">
         <view class="showview" animation="{{animation}}" style="margin-left:{{marginLeft}}px" bindtouchstart="start" bindtouchmove="move" bindtouchend="end">
-          <view class="author_nature">
-            <image src="../../images/logo.jpg" mode="aspectFill" class="author_image"></image>
-            <view class="name">
-              <text class="author_name">{{txt}}</text>
+          <view class="author_nature clearfix">
+            <image src="../../images/logo.jpg" class="author_image"></image>
+            <view class="name clearfix">
+              <view class="author_name">
+                <text>{{txt}}</text>
+                <text class="time">2017年5月16日</text>
+              </view>
             </view>
           </view>
         </view>
         <view class="hideview">收藏</view>
         <view class="model_content">
           <text class="article_content">
-            最近很是着迷这玩意，搬家了，新家没网，最近没写文章。我觉得如果要学前端框架就学iconic，学了它你就会angular了，........
+            最近很是着迷这玩意，搬家了，新家没网，最近没写文章。我觉得如果要学前端框架就学iconic，学了它你就会angular了
           </text>
-          <view style="width:100%;margin-top:10px;">
-            <image src="../../images/ioniclogo.jpg" mode="aspectFill" class="content_image"></image>
+          <view style="width:100%;margin-top:10rpx;">
+            <image src="../../images/ioniclogo.jpg" class="content_image"></image>
           </view>
-          <view class="upload_time">2017/4/6</view>
         </view>
       </view>
     </view>
-        <view class="flex-wrp" style="flex-direction:column;">
+    <view class="flex-wrp" style="flex-direction:column;">
       <view class="article">
         <view class="showview" animation="{{animation}}" style="margin-left:{{marginLeft}}px" bindtouchstart="start" bindtouchmove="move" bindtouchend="end">
-          <view class="author_nature">
-            <image src="../../images/logo.jpg" mode="aspectFill" class="author_image"></image>
-            <view class="name">
-              <text class="author_name">{{txt}}</text>
+          <view class="author_nature clearfix">
+            <image src="../../images/logo.jpg" class="author_image"></image>
+            <view class="name clearfix">
+              <view class="author_name">
+                <text>{{txt}}</text>
+                <text class="time">2017年5月16日</text>
+              </view>
             </view>
           </view>
         </view>
         <view class="hideview">收藏</view>
         <view class="model_content">
           <text class="article_content">
-            最近很是着迷这玩意，搬家了，新家没网，最近没写文章。我觉得如果要学前端框架就学iconic，学了它你就会angular了，........
+            最近很是着迷这玩意，搬家了，新家没网，最近没写文章。我觉得如果要学前端框架就学iconic，学了它你就会angular了
           </text>
-          <view style="width:100%">
-            <image src="../../images/ioniclogo.jpg" mode="aspectFill" class="content_image"></image>
+          <view style="width:100%;margin-top:10rpx;">
+            <image src="../../images/ioniclogo.jpg" class="content_image"></image>
           </view>
-          <view class="upload_time">2017/4/6</view>
+        </view>
+      </view>
+    </view>
+    <view class="flex-wrp" style="flex-direction:column;">
+      <view class="article">
+        <view class="showview" animation="{{animation}}" style="margin-left:{{marginLeft}}px" bindtouchstart="start" bindtouchmove="move" bindtouchend="end">
+          <view class="author_nature clearfix">
+            <image src="../../images/logo.jpg" class="author_image"></image>
+            <view class="name clearfix">
+              <view class="author_name">
+                <text>{{txt}}</text>
+                <text class="time">2017年5月16日</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="hideview">收藏</view>
+        <view class="model_content">
+          <text class="article_content">
+            最近很是着迷这玩意，搬家了，新家没网，最近没写文章。我觉得如果要学前端框架就学iconic，学了它你就会angular了
+          </text>
+          <view style="width:100%;margin-top:10rpx;">
+            <image src="../../images/ioniclogo.jpg" class="content_image"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="flex-wrp" style="flex-direction:column;">
+      <view class="article">
+        <view class="showview" animation="{{animation}}" style="margin-left:{{marginLeft}}px" bindtouchstart="start" bindtouchmove="move" bindtouchend="end">
+          <view class="author_nature clearfix">
+            <image src="../../images/logo.jpg" class="author_image"></image>
+            <view class="name clearfix">
+              <view class="author_name">
+                <text>{{txt}}</text>
+                <text class="time">2017年5月16日</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="hideview">收藏</view>
+        <view class="model_content">
+          <text class="article_content">
+            最近很是着迷这玩意，搬家了，新家没网，最近没写文章。我觉得如果要学前端框架就学iconic，学了它你就会angular了
+          </text>
+          <view style="width:100%;margin-top:10rpx;">
+            <image src="../../images/ioniclogo.jpg" class="content_image"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="flex-wrp" style="flex-direction:column;">
+      <view class="article">
+        <view class="showview" animation="{{animation}}" style="margin-left:{{marginLeft}}px" bindtouchstart="start" bindtouchmove="move" bindtouchend="end">
+          <view class="author_nature clearfix">
+            <image src="../../images/logo.jpg" class="author_image"></image>
+            <view class="name clearfix">
+              <view class="author_name">
+                <text>{{txt}}</text>
+                <text class="time">2017年5月16日</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="hideview">收藏</view>
+        <view class="model_content">
+          <text class="article_content">
+            最近很是着迷这玩意，搬家了，新家没网，最近没写文章。我觉得如果要学前端框架就学iconic，学了它你就会angular了
+          </text>
+          <view style="width:100%;margin-top:10rpx;">
+            <image src="../../images/ioniclogo.jpg" class="content_image"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="flex-wrp" style="flex-direction:column;">
+      <view class="article">
+        <view class="showview" animation="{{animation}}" style="margin-left:{{marginLeft}}px" bindtouchstart="start" bindtouchmove="move" bindtouchend="end">
+          <view class="author_nature clearfix">
+            <image src="../../images/logo.jpg" class="author_image"></image>
+            <view class="name clearfix">
+              <view class="author_name">
+                <text>{{txt}}</text>
+                <text class="time">2017年5月16日</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="hideview">收藏</view>
+        <view class="model_content">
+          <text class="article_content">
+            最近很是着迷这玩意，搬家了，新家没网，最近没写文章。我觉得如果要学前端框架就学iconic，学了它你就会angular了
+          </text>
+          <view style="width:100%;margin-top:10rpx;">
+            <image src="../../images/ioniclogo.jpg" class="content_image"></image>
+          </view>
         </view>
       </view>
     </view>

@@ -52,7 +52,21 @@ function getDateDiff(dateTimeStamp) {
   return result;
 }
 
+
+function AJAX ( data = '', fn, method = "get", header = {}) {
+  wx.request({
+    url: 'https://www.easy-mock.com/mock/591aa1079aba4141cf234cd9/ionic/' + data,
+    method: method ? method : 'get',
+    data: {},
+    header: header ? header : { "Content-Type": "application/json" },
+    success: function (res) {
+      fn(res);
+    }
+  });
+}
+
 module.exports = {
   formatTime: formatTime,
-  getDateDiff: getDateDiff
+  getDateDiff: getDateDiff,
+  AJAX:AJAX
 }

@@ -29,7 +29,6 @@ function reply(id) {
 
 // get请求方法
 function fetchGet(url, callback) {
-    // return callback(null, top250)
     wx.request({
         url: url,
         header: { 'Content-Type': 'application/json' },

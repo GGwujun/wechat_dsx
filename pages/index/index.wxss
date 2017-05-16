@@ -4,12 +4,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: white
-}
-
-image {
-  width: 100%;
-  height: 150px;
+  background-color: white;
 }
 
 .flex-item {
@@ -30,62 +25,90 @@ image {
 .bc_blue {
   background-color: blue;
 }
-.article{
+
+.article {
   width: 100%;
-  height: 380px;
-  margin-top: 10rpx;
-  border-top: 1px solid #D4D4D4;
-  border-bottom: 1px solid #D4D4D4;
-  position: relative
+  margin-bottom: 20rpx;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  background-color: #fff;
 }
-.showview{
-    background-color: white;
-    height: 80px;
-    line-height: 80px;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    margin-left: 0;
+
+
+
+.showview {
+  background-color: white;
+  height: 80px;
+  line-height: 80px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  margin-left: 0;
 }
-.hideview{
-    position: absolute;
-    background-color: blue;
-    color: #fff;
-    height: 80px;
-    line-height: 80px;
-    width: 100px;
-    right: 0;
-    text-align: center;
+
+.hideview {
+  position: absolute;
+  background-color: blue;
+  color: #fff;
+  height: 80px;
+  line-height: 80px;
+  width: 100px;
+  right: 0;
+  text-align: center;
 }
-.author_image{
+
+.author_image {
   width: 50px;
   height: 50px;
   margin-left: 20px;
   margin-top: 15px;
-  float: left
+  float: left;
 }
-.author_name{
+
+.author_name {
   display: inline-block;
   margin-left: 20px;
   float: left;
+  padding-top: 50rpx;
 }
-.update_time{
+
+.author_name text{
+  line-height: 65rpx;
+  display: block;
+}
+
+.author_name text.time{
+  font-size: 30rpx
+}
+
+.update_time {
   display: inline-block;
 }
-.model_content{
-  width: 100%;
-  height: 150px;
-  float: left;
+
+.model_content {
   margin-top: 80px;
+  padding: 35rpx;
+  padding-top: 0;
+  text-align: justify;
+  text-align-last: justify;
 }
-.content_image{
-  max-width: 100%;
-  max-height: 130px
+
+
+
+.article_content {
+  line-height:55rpx;
 }
-.upload_time{
+
+.content_image {
+  max-height: 115px;
+  margin-top: 20rpx;
+}
+
+.upload_time {
   height: 50px;
   line-height: 50px;
   float: right;
   margin-right: 10px;
-  color: red
+  color: red;
 }
